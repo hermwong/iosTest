@@ -7,7 +7,7 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <preference name="ServiceWorker" value="sw.js" />
+    <preference name="ServiceWorker" value="scripts/sw.js" />
     <preference name="CacheCordovaAssets" value="false" />
     <content src="index.html" />
     <access origin="*" />

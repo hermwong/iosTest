@@ -166,7 +166,7 @@
 .details-view__edit {
   width: 24px;
   height: 24px;
-  background: url(/images/ic_arrow_back_24px.svg) center center no-repeat;
+  background: url(../images/ic_arrow_back_24px.svg) center center no-repeat;
   text-indent: -30000px;
   overflow: hidden;
   opacity: 0.54;
@@ -182,20 +182,20 @@
   display: block;
   float: right;
   margin-left: 24px;
-  background-image: url(/images/ic_file_download_24px.svg);
+  background-image: url(../images/ic_file_download_24px.svg);
 }
 
 .details-view__edit {
   display: block;
   float: right;
   margin-left: 24px;
-  background-image: url(/images/ic_mode_edit_24px.svg);
+  background-image: url(../images/ic_mode_edit_24px.svg);
 }
 
 .details-view__delete {
   display: block;
   float: right;
-  background-image: url(/images/ic_delete_white_24px.svg);
+  background-image: url(../images/ic_delete_white_24px.svg);
 }
 
 .details-view__delete:hover,
@@ -248,7 +248,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: url(/images/ic_play_arrow_24px.svg) center center no-repeat;
+  background: url(../images/ic_play_arrow_24px.svg) center center no-repeat;
   text-indent: -30000px;
   overflow: hidden;
   border: none;
@@ -315,7 +315,7 @@
   }
 
   .details-view__back {
-    background-image: url(/images/ic_close_24px.svg);
+    background-image: url(../images/ic_close_24px.svg);
   }
 
   .details-view__title {

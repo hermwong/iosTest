@@ -154,7 +154,7 @@
 .edit-view__back {
   width: 24px;
   height: 24px;
-  background: url(/images/ic_arrow_back_24px.svg) center center no-repeat;
+  background: url(../images/ic_arrow_back_24px.svg) center center no-repeat;
   text-indent: -30000px;
   overflow: hidden;
   opacity: 0.54;
@@ -166,7 +166,7 @@
 }
 
 .edit-view__done {
-  background-image: url(/images/ic_done_24px.svg);
+  background-image: url(../images/ic_done_24px.svg);
   float: right;
   display: block;
 }

@@ -17,55 +17,55 @@
 importScripts('third_party/serviceworker-cache-polyfill.js');
 
 var CACHE_NAME = 'voicememo';
-var CACHE_VERSION = '1.0.5';
+var CACHE_VERSION = '1.0.10';
 
 self.oninstall = function(event) {
 
   var urls = [
 
     '/',
-    '/images/chrome-touch-icon-192x192.png',
-    '/images/chrome-touch-icon-384x384.png',
-    '/images/ic_add_24px.svg',
-    '/images/ic_arrow_back_24px.svg',
-    '/images/ic_close_24px.svg',
-    '/images/ic_delete_24px.svg',
-    '/images/ic_delete_white_24px.svg',
-    '/images/ic_done_24px.svg',
-    '/images/ic_feedback_24px.svg',
-    '/images/ic_file_download_24px.svg',
-    '/images/ic_info_outline_24px.svg',
-    '/images/ic_menu_24px.svg',
-    '/images/ic_mic_24px.svg',
-    '/images/ic_mode_edit_24px.svg',
-    '/images/ic_pause_24px.svg',
-    '/images/ic_play_arrow_24px.svg',
-    '/images/ic_restore_24px.svg',
-    '/images/icon-sessions.svg',
-    '/images/side-nav-bg@2x.jpg',
-    '/images/superfail.svg',
+    'images/chrome-touch-icon-192x192.png',
+    'images/chrome-touch-icon-384x384.png',
+    'images/ic_add_24px.svg',
+    'images/ic_arrow_back_24px.svg',
+    'images/ic_close_24px.svg',
+    'images/ic_delete_24px.svg',
+    'images/ic_delete_white_24px.svg',
+    'images/ic_done_24px.svg',
+    'images/ic_feedback_24px.svg',
+    'images/ic_file_download_24px.svg',
+    'images/ic_info_outline_24px.svg',
+    'images/ic_menu_24px.svg',
+    'images/ic_mic_24px.svg',
+    'images/ic_mode_edit_24px.svg',
+    'images/ic_pause_24px.svg',
+    'images/ic_play_arrow_24px.svg',
+    'images/ic_restore_24px.svg',
+    'images/icon-sessions.svg',
+    'images/side-nav-bg@2x.jpg',
+    'images/superfail.svg',
 
-    '/scripts/voicememo-core.js',
-    '/scripts/voicememo-details.js',
-    '/scripts/voicememo-list.js',
-    '/scripts/voicememo-record.js',
+    'scripts/voicememo-core.js',
+    'scripts/voicememo-details.js',
+    'scripts/voicememo-list.js',
+    'scripts/voicememo-record.js',
 
-    '/styles/voicememo-core.css',
-    '/styles/voicememo-details.css',
-    '/styles/voicememo-edit.css',
-    '/styles/voicememo-list.css',
-    '/styles/voicememo-record.css',
+    'styles/voicememo-core.css',
+    'styles/voicememo-details.css',
+    'styles/voicememo-edit.css',
+    'styles/voicememo-list.css',
+    'styles/voicememo-record.css',
 
-    '/third_party/Recorderjs/recorder.js',
-    '/third_party/Recorderjs/recorderWorker.js',
-    '/third_party/Recorderjs/wavepcm.js',
-    '/third_party/moment.min.js',
+    'third_party/Recorderjs/recorder.js',
+    'third_party/Recorderjs/recorderWorker.js',
+    'third_party/Recorderjs/wavepcm.js',
+    'third_party/moment.min.js',
 
-    '/third_party/Roboto/Roboto-400.woff',
-    '/third_party/Roboto/Roboto-500.woff',
+    'third_party/Roboto/Roboto-400.woff',
+    'third_party/Roboto/Roboto-500.woff',
 
-    '/favicon.ico',
-    '/manifest.json'
+    'favicon.ico',
+    'manifest.json'
 
   ];
 

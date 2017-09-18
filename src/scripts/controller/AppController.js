@@ -92,6 +92,7 @@ export default class AppController extends Controller {
       this.sideNavContent.addEventListener('touchmove', onSideNavTouchMove);
       this.sideNavContent.addEventListener('touchend', onSideNavTouchEnd);
 
+      // HW - this is where it detects for WebAudioSupport
       if (!this.supportsGUMandWebAudio()) {
         document.body.classList.add('superfail');
         this.newRecordingButton.classList.add('hidden');
@@ -106,13 +107,18 @@ export default class AppController extends Controller {
           e.target.classList.add('pending');
         }
 
-        this.newRecordingButton.addEventListener('click', showWaitAnimation);
-
-        this.loadScript('/scripts/voicememo-list.js')
-        this.loadScript('/scripts/voicememo-details.js');
-        this.loadScript('/scripts/voicememo-record.js').then( () => {
-          this.newRecordingButton.removeEventListener('click', showWaitAnimation);
+        // HW - create new recording click handler
+        //this.newRecordingButton.addEventListener('click', showWaitAnimation);
+        this.newRecordingButton.addEventListener('click', function () {
+            console.log("new recording button clicked");
         });
+
+        // HW - remove the loading of these scripts FOR NOW; will need to conver them to use PG Media Plugins
+        //this.loadScript('/scripts/voicememo-list.js')
+        //this.loadScript('/scripts/voicememo-details.js');
+        //this.loadScript('/scripts/voicememo-record.js').then( () => {
+          //this.newRecordingButton.removeEventListener('click', showWaitAnimation);
+        //});
 
         this.sideNavToggleButton.addEventListener('click', () => {
           this.toggleSideNav();
@@ -169,10 +175,13 @@ export default class AppController extends Controller {
   }
 
   supportsGUMandWebAudio () {
+    // HW - added check for navigator.mediaDevices.getUserMedia
+    console.log("supportsGUMandWebAudio: " + navigator.mediaDevices.getUserMedia);
     return (navigator.getUserMedia ||
       navigator.webkitGetUserMedia ||
       navigator.mozGetUserMedia ||
-      navigator.msGetUserMedia) &&
+      navigator.msGetUserMedia ||
+      navigator.mediaDevices.getUserMedia) &&
 
       (window.AudioContext ||
       window.webkitAudioContext ||

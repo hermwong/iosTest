@@ -51,11 +51,15 @@ export default class RecordController extends Controller {
     this.recordStopButton.disabled = true;
 
     this.recordStartButton.addEventListener('click', () => {
-      this.startRecording();
+      // HW - record click handler
+      //this.startRecording();
+      console.log("record something!")
     });
 
     this.recordStopButton.addEventListener('click', () => {
-      this.stopRecording();
+      // HW - sto recording click handler
+      //this.stopRecording();
+      console.log("stop recording");
     });
 
     this.recordCancelButton.addEventListener('click', () => {

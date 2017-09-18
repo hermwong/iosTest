@@ -30,8 +30,8 @@ export default class ListController extends Controller {
     this.view = document.querySelector('.js-list-view');
 
     Promise.all([
-      this.loadCSS('/styles/voicememo-list.css'),
-      this.loadScript('/third_party/moment.min.js')
+      this.loadCSS('styles/voicememo-list.css'),
+      this.loadScript('third_party/moment.min.js')
     ])
     .then( () => {
       this.getMemosAndPopulate();

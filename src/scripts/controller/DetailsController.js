@@ -63,7 +63,7 @@ export default class DetailsController extends Controller {
     this.playbackStarted = 0;
     this.renderPlaybackCanvasBound = this.renderPlaybackCanvas.bind(this);
 
-    this.loadCSS('/styles/voicememo-details.css').then( () => {
+    this.loadCSS('styles/voicememo-details.css').then( () => {
 
       this.view.classList.remove('hidden');
 

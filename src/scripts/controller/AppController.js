@@ -35,6 +35,8 @@ export default class AppController extends Controller {
     this.sideNavContent = this.sideNav.querySelector('.js-side-nav-content');
     this.newRecordingButton = document.querySelector('.js-new-recording-btn');
 
+    //this.recordView = document.querySelector('.js-record-view');
+
     this.deleteMemos = this.sideNav.querySelector('.js-delete-memos');
     this.deleteMemos.addEventListener('click', this.deleteAllMemos);
 
@@ -111,12 +113,15 @@ export default class AppController extends Controller {
         //this.newRecordingButton.addEventListener('click', showWaitAnimation);
         this.newRecordingButton.addEventListener('click', function () {
             console.log("new recording button clicked");
+            //this.recordView.classList.remove('hidden');
+
+            //document.querySelector('.js-record-view').classList.remove('hidden');
         });
 
         // HW - remove the loading of these scripts FOR NOW; will need to conver them to use PG Media Plugins
-        //this.loadScript('/scripts/voicememo-list.js')
-        //this.loadScript('/scripts/voicememo-details.js');
-        //this.loadScript('/scripts/voicememo-record.js').then( () => {
+        this.loadScript('scripts/voicememo-list.js');
+        this.loadScript('scripts/voicememo-details.js');
+        this.loadScript('scripts/voicememo-record.js');//.then( () => {
           //this.newRecordingButton.removeEventListener('click', showWaitAnimation);
         //});
 

@@ -48,7 +48,7 @@ export default class EditController extends Controller {
     this.formDescriptionLabel =
         this.form.querySelector('.edit-view__edit-form-description-label');
 
-    this.loadCSS('/styles/voicememo-edit.css').then( () => {
+    this.loadCSS('styles/voicememo-edit.css').then( () => {
 
       this.view.classList.remove('hidden');
 

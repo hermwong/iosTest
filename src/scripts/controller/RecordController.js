@@ -71,8 +71,8 @@ export default class RecordController extends Controller {
       });
     });
 
-    this.loadScript('/third_party/Recorderjs/recorder.js');
-    this.loadCSS('/styles/voicememo-record.css')
+    this.loadScript('third_party/Recorderjs/recorder.js');
+    this.loadCSS('styles/voicememo-record.css')
         .then( () => {
 
           this.view.classList.remove('hidden');

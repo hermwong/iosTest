@@ -1,4 +1,4 @@
-AudioContext = AudioContext || webkitAudioContext || mozAudioContext;
+AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext;
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
 
 var Recorder = function( config ){
@@ -82,7 +82,7 @@ Recorder.prototype.initStream = function(){
       that.sourceNode.connect( that.monitorNode );
       that.eventTarget.dispatchEvent( new Event( "streamReady" ) );
     },
-    function ( e ) { 
+    function ( e ) {
       that.eventTarget.dispatchEvent( new ErrorEvent( "streamError", { error: e } ) );
     }
   );
